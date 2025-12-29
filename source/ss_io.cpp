@@ -15,6 +15,7 @@
 #include <windows.h>
 
 #define mkdir(x, y) mkdir(x)
+#define stat _stat64 // ?!
 #elif __VITA__
 
 #include <psp2/kernel/threadmgr.h>

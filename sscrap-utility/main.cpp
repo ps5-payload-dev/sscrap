@@ -463,7 +463,7 @@ Scrap::Scrap(const ArgumentParser &parser) {
     Api::printc(COLOR_G, " \\_____  \\ \\_____  \\ /    \\  \\/|       _/ /  /_\\  \\|     ___/\n");
     Api::printc(COLOR_G, " /        \\/        \\\\     \\___|    |   \\/    |    \\    |    \n");
     Api::printc(COLOR_G, "/_______  /_______  / \\______  /____|_  /\\____|__ _/____|    \n");
-    Api::printc(COLOR_G, "        \\/        \\/         \\/       \\/ 2020 @ cpasjuste\n\n");
+    Api::printc(COLOR_G, "        \\/        \\/         \\/       \\/ 2026 @ cpasjuste\n\n");
 
     if (!args.tokens.empty() && !args.exist("-zi")) {
         Api::printc(COLOR_G, "Getting user information... ");
@@ -652,8 +652,8 @@ void Scrap::run() {
         printf("\t\t763: NeoGeo Pocket (fbneo)\n");
         printf("\n");
         printf("examples:\n\n");
-        printf("\tscrap mame/fbneo system, download \'mixrbv2\' for \'image\', \'box-3D\' for \'thumbnail\' and \'video\' for \'video\':\n");
-        printf("\t\tsscrap -u user -p password -r /roms -sid 75 -i mixrbv2 -t box-3D -v video\n\n");
+        printf("\tscrap mame/fbneo system, download \'mixrbv2\' for \'image\' and \'video\' for \'video\':\n");
+        printf("\t\tsscrap -u username -p password -r /roms -sid 75 -i mixrbv2 -v video\n\n");
         printf("\n");
     }
 }
