@@ -30,7 +30,7 @@ jobs:
           mkdir cmake-build && cd cmake-build
           cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release \
             -DPLATFORM_LINUX=ON -DBUILD_SSCRAP=ON \
-            -DSS_DEV_ID=${{ secrets.SS_DEV_ID }} -DSS_DEV_PWD=${{ secrets.SS_DEV_PWD }}
+            -DSS_DEV_ID=${{ secrets.SS_DEV_ID }} -DSS_DEV_PWD=${{ secrets.SS_DEV_PWD }} \
             ..
 
       - name: Build
