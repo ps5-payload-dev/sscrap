@@ -11,6 +11,7 @@ option(PLATFORM_SWITCH "Nintendo Switch platform target" OFF)
 option(PLATFORM_3DS "Nintendo 3DS platform target" OFF)
 option(PLATFORM_VITA "Sony PS Vita platform target" OFF)
 option(PLATFORM_PS4 "Sony PS4 platform target" OFF)
+option(PLATFORM_PS5 "Sony PS5 platform target" OFF)
 option(PLATFORM_ANDROID "Android platform target (aarch64)" OFF)
 ####################
 # TARGET PLATFORM
@@ -62,6 +63,12 @@ elseif (PLATFORM_VITA)
 elseif (PLATFORM_PS4)
     list(APPEND CFLAGS)
     list(APPEND LDFLAGS tinyxml2 mbedtls mbedcrypto mbedx509 SceNet)
+elseif (PLATFORM_PS5)
+    #####################
+    # PS5 PLATFORM
+    #####################
+    list(APPEND CFLAGS)
+    list(APPEND LDFLAGS tinyxml2 z zstd ssl crypto psl)
 elseif (PLATFORM_3DS)
     list(APPEND CFLAGS -D__3DS__)
     list(APPEND LDFLAGS mbedtls mbedcrypto mbedx509 ctru)
